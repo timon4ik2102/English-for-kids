@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/sunny.ico" type="image/x-icon">
+    <title>English for kids</title>
+</head>
+
+<body>
+    <div class="black-overlay"></div>
+    <div class="wrapper">
+        <header class="header">
+            <span class="hamburger"><span class="hamburger__lines"></span></span>
+            <p class="category">Categories</p>
+            <nav class="header-nav">
+                <ul class="nav" id='menu'>
+                    <li class="nav__item  nav__item_home">
+                        <a class="nav__text nav__text_active" href="#" value="main">Home</a>
+                    </li>
+                    <li class="nav__item nav__item_action-a">
+                        <a class="nav__text" href="#" value="actionA">Action (set A)</a>
+                    </li>
+                    <li class="nav__item nav__item_action-b">
+                        <a class="nav__text" href="#" value="actionB">Action (set B)</a>
+                    </li>
+                    <li class="nav__item nav__item_animal-a">
+                        <a class="nav__text" href="#" value="animalA">Animal (set A)</a>
+                    </li>
+                    <li class="nav__item nav__item_animal-b">
+                        <a class="nav__text" href="#" value="animalB">Animal (set B)</a>
+                    </li>
+                    <li class="nav__item nav__item_clothes">
+                        <a class="nav__text" href="#" value="clothes">Clothes</a>
+                    </li>
+                    <li class="nav__item nav__item_emotions">
+                        <a class="nav__text" href="#" value="emotions">Emotions</a>
+                    </li>
+                    <li class="nav__item nav__item_action-c">
+                        <a class="nav__text" href="#" value="fruits">Fruits</a>
+                    </li>
+                    <li class="nav__item nav__item_adjective">
+                        <a class="nav__text" href="#" value="adjective">Adjective</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="switch-btn">
+                <label class="switch">
+                    <input type="checkbox" class="switch__input" checked="">
+                    <span class="switch__label" data-on="Train" data-off="Play"></span>
+                    <span class="switch__handle"></span>
+                </label>
+            </div>
+        </header>
+        <section class="container">
+            <div class="main-container">
+                <a href="#" class="main-card" value="actionA">
+                    <img class="main-card__img" src="./assets/images/main_page/dance.jpg" alt="Action (set A)">Action
+                    (set A) </a>
+                <a href="#" class="main-card" value="actionB">
+                    <img class="main-card__img" src="./assets/images/main_page/swim.jpg" alt="Action (set B)">Action
+                    (set B) </a>
+                <a href="#" class="main-card" value="animalA">
+                    <img class="main-card__img" src="./assets/images/main_page/cat.jpg" alt="Action (set A)">Animal (set
+                    A) </a>
+                <a href="#" class="main-card" value="animalB">
+                    <img class="main-card__img" src="./assets/images/main_page/bird.jpg" alt="Action (set A)">Animal
+                    (set B) </a>
+                <a href="#" class="main-card" value="clothes">
+                    <img class="main-card__img" src="./assets/images/main_page/blouse.jpg" alt="Action (set A)">Clothes
+                </a>
+                <a href="#" class="main-card" value="emotions">
+                    <img class="main-card__img" src="./assets/images/main_page/smile.jpg"
+                        alt="Action (set A)">Emotions</a>
+                <a href="#" class="main-card" value="fruits">
+                    <img class="main-card__img" src="./assets/images/main_page/fruits.jpg" alt="Adjective">Fruits</a>
+                <a href="#" class="main-card" value="adjective">
+                    <img class="main-card__img" src="./assets/images/main_page/friendly.jpg" alt="adjective">Adjective
+                </a>
+            </div>
+            <div class="question-container container-display-none">
+                <div class="rating">
+                    <div class="marks none"></div>
+                    <audio class="audio"></audio><audio class="soundEffects"></audio>
+                    <div class="game-btn none">Start game</div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card ">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en ">chick</div>
+                            <div class="rotate "></div>
+                        </div>
+                        <div class="card__back">
+                            <div class="card__header-ru">цыплёнок</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">chick</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class="card__back">
+                            <div class="card__header-ru">цыплёнок</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">chicken</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class=" card__back">
+                            <div class="card__header-ru">курица</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">dog</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class=" card__back">
+                            <div class="card__header-ru">собака</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">horse</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class=" card__back">
+                            <div class="card__header-ru">лошадь</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">pig</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class=" card__back">
+                            <div class="card__header-ru">свинья</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">rabbit</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class=" card__back">
+                            <div class="card__header-ru">кролик</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card__content card">
+                        <audio preload="auto" class="card__audio" src="./assets/audio/angry.mp3"></audio>
+                        <div class="card__front">
+                            <div class="card__header-en">sheep</div>
+                            <div class=" rotate"></div>
+                        </div>
+                        <div class=" card__back">
+                            <div class="card__header-ru">овца</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

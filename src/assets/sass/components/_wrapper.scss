@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+.table-wraper {
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $color-background;
+}
+
+.stat-block {
+    width: 40%;
+    height: auto;
+    margin: 10px auto;
+    font-size: 2rem;
+    color: #1383da;
+    border: 2px solid $color-turquoise-satured;
+    border-collapse: collapse;
+    z-index: 5;
+    position: absolute;
+    top: 10%;
+    // width: 100vw;
+    // height: 100vh;
+    // top: 0;
+    // left: 0;
+    // background-color: $color-background;
+}
+
+td {
+    border: 2px solid $color-turquoise-satured;
+    border-collapse: collapse;
+}

@@ -1,0 +1,158 @@
+.main-card,
+.question-card {
+    width: 300px;
+    height: 280px;
+    margin: 20px;
+    text-decoration: none;
+    background: $color-blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    font-size: 3.8em;
+    text-align: center;
+    color: $color-white;
+    transition: all 0.2s;
+
+    @include media-tablet {
+        width: 280px;
+        height: 260px;
+        margin: 11px;
+    }
+
+    @include media-mobilesmall {
+        width: 270px;
+        height: 250px;
+        margin: 11px;
+    }
+
+    &__img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 10px solid $color-white;
+        object-fit: cover;
+        margin: 30px auto;
+
+        @include media-tablet {
+            margin: 16px auto;
+        }
+    }
+}
+
+.main-card:hover {
+    box-shadow: 0 0 10px 5px $color-card-front-hover;
+    transform: scale(1.02);
+}
+
+.question-card {
+    background-color: transparent;
+    transform: scale(1);
+    transition: all 0.2s;
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    box-shadow: 0 2px 4px $color-card-shadow;
+    transition: 0.9s all;
+
+    &__front,
+    &__back {
+        background-image: url('../images/angry.jpg');
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 25px;
+        transition: 0.5s all;
+        backface-visibility: hidden;
+        border: 1px solid $color-card-border;
+    }
+
+    &__back {
+        transform: rotateY(180deg);
+    }
+
+    &__header-ru,
+    &__header-en {
+        margin-top: 200px;
+        padding: 15px;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        width: 100%;
+        pointer-events: none;
+        background: $color-lightblue;
+        color: $color-nightblue;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+        @include media-tablet {
+            margin-top: 188px;
+            padding: 12px;
+            font-size: 37px;
+            line-height: 40px;
+        }
+
+        @include media-mobilesmall {
+            margin-top: 179px;
+
+            font-size: 36px;
+        }
+    }
+}
+
+.flipped {
+    position: relative;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+.card__front:hover {
+    box-shadow: 0 0 10px 5px $color-card-front-hover;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.rotate {
+    background-image: url('../images/refresh.svg');
+    display: inline-block;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background-size: 33px;
+    background-repeat: no-repeat;
+    bottom: 21px;
+    right: 9px;
+    transition: all 0.2s;
+    cursor: default;
+}
+
+.rotate:hover {
+    background-image: url('../images/refreshone.svg');
+}
+
+.non-visible {
+    display: none;
+}
+
+.card-cover {
+    background-size: cover;
+    background-position: 40%;
+}
+
+.blue {
+    background: $color-newBlue;
+}
+
+.inactive {
+    opacity: 0.4;
+}

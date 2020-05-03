@@ -1,0 +1,80 @@
+.rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto 0;
+    line-height: 36px;
+    font-size: 36px;
+
+    @include media-mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.game-btn {
+    margin-right: 40px;
+    border: 3px solid $color-white;
+    width: 288px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(40deg, $color-turquoise, $color-newBlue);
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 19px;
+    line-height: 47px;
+    text-align: center;
+    color: $color-white;
+
+    @include media-mobile {
+        margin: 0 auto;
+        width: 79%;
+    }
+}
+
+.repeat {
+    width: 80px;
+    height: 50px;
+    font-size: 0;
+    background-image: url('../images/repeat.svg'), linear-gradient(40deg, $color-turquoise, $color-newBlue);
+    background-repeat: no-repeat;
+    background-size: 32px 32px, cover;
+    background-position: 50%;
+}
+
+.marks {
+    display: flex;
+    margin-left: 40px;
+    width: 70%;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid $color-white;
+    overflow: hidden;
+    background: linear-gradient(40deg, $color-newBlue, $color-turquoise);
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8px;
+
+    @include media-mobile {
+        width: 78%;
+        margin: 0 auto 5px;
+    }
+}
+
+.star-error,
+.star-succes {
+    flex-shrink: 0;
+    margin-left: 4px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.star-error {
+    background-image: url('../images/star.svg');
+}
+
+.star-succes {
+    background-image: url('../images/star-win.svg');
+}

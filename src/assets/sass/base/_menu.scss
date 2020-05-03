@@ -1,0 +1,56 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    width: 28%;
+    height: 100%;
+    padding: 140px 0 0 4%;
+    background: linear-gradient(40deg, $color-turquoise, $color-turquoise-satured);
+    top: 0;
+    z-index: 8;
+    left: -28%;
+    transition: all 0.5s;
+
+    @include media-tablet {
+        width: 48%;
+        left: -48%;
+        padding: 140px 0 0 4%;
+    }
+
+    @include media-mobile {
+        width: 60%;
+        left: -60%;
+        padding: 140px 0 0 4%;
+    }
+
+    &__item {
+        min-width: 120px;
+        max-width: 150px;
+        text-align: left;
+        margin: 2% 10%;
+        font-size: 22px;
+    }
+
+    &__text {
+        display: block;
+        width: 150px;
+        color: $color-white;
+        text-decoration: none;
+        cursor: pointer;
+
+        &_active {
+            color: $color-active-text;
+            text-shadow: 2px 3px 3px $color-black, 0 0 1em $color-text-shadow;
+        }
+
+        &:not(.nav__text_active):hover {
+            color: $color-hover-text;
+            text-shadow: 1px 1px 1px $color-black, 0 0 1em $color-text-shadow;
+        }
+    }
+}
+
+.nav-active {
+    left: 0;
+}

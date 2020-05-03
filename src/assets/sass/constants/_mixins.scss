@@ -1,0 +1,28 @@
+@mixin containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 15px 15px;
+    margin: auto;
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-big-width) {
+        @content;
+    }
+}
+
+@mixin media-mobilesmall {
+    @media (max-width: $mobile-small-width) {
+        @content;
+    }
+}
+
+.sd {
+}
